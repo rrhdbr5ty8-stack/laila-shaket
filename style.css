@@ -1,0 +1,98 @@
+:root{--cream:#fff8ef;--peach:#ffe7d6;--peach2:#ffd2b8;--amber:#f2a541;--amberd:#d9821f;--lav:#3d3657;--lav2:#6b5f8f;--lavl:#e9e4f5;--ink:#3b2f2a;--muted:#7a6a60}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Assistant,Heebo,sans-serif;font-size:18px;line-height:1.7;color:var(--ink);background:var(--cream);overflow-x:hidden}
+body.loading{overflow:hidden}
+h1,h2,h3,.brand,.btn,time{font-family:"Varela Round",Assistant,sans-serif;font-weight:400}
+h2{font-size:clamp(1.6rem,5vw,2.3rem);line-height:1.3;margin:0 0 .6em}
+.wrap{max-width:1040px;margin:0 auto;padding:56px 22px}
+.center{text-align:center}.muted{color:var(--muted)}
+.btn{display:inline-block;background:var(--amber);color:#3b2207;text-decoration:none;border:0;border-radius:999px;padding:14px 26px;font-size:1.05rem;cursor:pointer;box-shadow:0 6px 18px rgba(217,130,31,.3);transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}.btn.soft{background:rgba(255,255,255,.15);color:#fff;box-shadow:none;border:1.5px solid rgba(255,255,255,.5)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.wave{display:block;width:100%;height:70px;margin:-1px 0}
+/* moon & stars */
+.moon{width:70px;height:70px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff6d8,#ffd98a);box-shadow:0 0 40px 10px rgba(255,217,138,.35)}
+.moon.big{width:80px;height:80px;position:absolute;top:28px;left:8%}
+.moon.small{width:46px;height:46px;margin:0 auto}
+.st{position:absolute;width:6px;height:6px;background:#fff4c9;border-radius:50%;box-shadow:0 0 8px #fff4c9;animation:tw 3s infinite ease-in-out}
+.s1{top:18%;left:30%}.s2{top:30%;left:60%;animation-delay:.8s}.s3{top:12%;left:80%;animation-delay:1.6s}.s4{top:55%;left:18%;animation-delay:2.2s}.s5{top:65%;left:45%;animation-delay:1.1s}
+@keyframes tw{50%{opacity:.25;transform:scale(.6)}}
+/* loader */
+#loader{position:fixed;inset:0;z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;background:linear-gradient(180deg,#2e2945,#6b5f8f 60%,#f2b98a);color:#fff;transition:opacity .9s}
+#loader.out{opacity:0;pointer-events:none}
+.lmedia{position:relative;width:min(88vw,560px);aspect-ratio:16/10;border-radius:28px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.35);background:linear-gradient(160deg,#4a4170,#c99a9a)}
+.lfallback{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+#intro{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}#intro.bad{display:none}
+.lmsg{font-family:"Varela Round",sans-serif;font-size:1.3rem;margin:0;text-align:center}
+.lctrl{display:flex;gap:16px;align-items:center;flex-wrap:wrap;justify-content:center}
+.soundbtn{font:inherit;background:rgba(255,255,255,.18);color:#fff;border:1px solid rgba(255,255,255,.5);border-radius:999px;padding:8px 18px;cursor:pointer}
+.skip{color:#fff;opacity:.85}
+.floatsound{position:fixed;bottom:16px;left:16px;z-index:50;width:48px;height:48px;border-radius:50%;border:0;background:var(--lav);color:#fff;font-size:1.2rem;box-shadow:0 6px 18px rgba(0,0,0,.25);cursor:pointer}
+/* hero */
+.hero{position:relative;background:linear-gradient(180deg,#2e2945 0%,#4f4673 55%,#8a6f8f 100%);color:#fff;overflow:hidden}
+.sky{position:absolute;inset:0;pointer-events:none}
+.hero .wrap{position:relative;padding-top:150px;padding-bottom:30px}
+.brand{opacity:.9;margin:0 0 14px}
+.hero h1{font-size:clamp(1.9rem,6.5vw,3.3rem);line-height:1.25;margin:0 0 18px}.hero h1 span{color:#ffd98a}
+.lead{max-width:640px;font-size:1.1rem;opacity:.95}
+/* scenes */
+.scenes{background:var(--cream)}
+.timeline{list-style:none;padding:0;margin:30px 0;border-right:3px dashed var(--peach2)}
+.timeline li{position:relative;padding:0 26px 26px 0}
+.timeline li:before{content:"";position:absolute;right:-11px;top:6px;width:18px;height:18px;border-radius:50%;background:var(--amber);border:3px solid var(--cream)}
+.timeline time{display:inline-block;background:var(--lavl);color:var(--lav);border-radius:999px;padding:2px 14px;font-size:.95rem}
+.timeline p{margin:.4em 0 0}
+.hug{margin:10px auto 0;max-width:620px;text-align:center;font-family:"Varela Round",sans-serif;font-size:1.25rem;background:var(--peach);border-radius:40px 40px 40px 8px;padding:26px}
+/* why */
+.why{background:var(--peach)}.why .wrap{padding-top:20px;padding-bottom:20px}
+.two{display:grid;gap:32px;align-items:center}
+.blanket{position:relative;height:200px;max-width:320px;width:100%;margin:0 auto}
+.pillow{position:absolute;top:40px;right:20px;width:110px;height:60px;border-radius:40px;background:#fff}
+.quilt{position:absolute;bottom:0;left:0;right:0;height:130px;border-radius:60px 60px 30px 30px;background:repeating-linear-gradient(45deg,#b9aedb 0 22px,#cfc6ea 22px 44px);box-shadow:inset 0 8px 0 rgba(255,255,255,.4)}
+.blanket .moon{position:absolute;top:0;left:30px}
+.note{background:#fff;border-radius:18px;padding:12px 18px;color:var(--lav2)}
+/* quiz */
+.quizbox{background:#fff;border-radius:36px;margin:40px auto;box-shadow:0 10px 40px rgba(61,54,87,.08);max-width:760px}
+fieldset{border:0;padding:0;margin:0 0 18px}legend{font-weight:700;margin-bottom:8px}
+fieldset label{display:block;background:var(--cream);border-radius:16px;padding:10px 14px;margin:6px 0;cursor:pointer}
+.qr{background:var(--lavl);border-radius:24px;padding:20px;margin-top:18px}
+/* kit */
+.kitgrid{display:grid;gap:16px;margin-top:24px}
+.k{border-radius:28px;padding:22px;position:relative}
+.k h3{margin:.2em 0}.k p{margin:0}.ico{font-size:2rem}
+.k1{background:var(--lav);color:#fff}.k2{background:#fff3d6}.k3{background:var(--lavl)}.k4{background:var(--peach)}.k5{background:#e3efe9}
+.addon{margin-top:22px;border:2px dashed var(--amber);border-radius:22px;padding:16px 20px;background:#fffaf2}
+/* promise */
+.promise .cols>div{border-radius:26px;padding:20px 24px}
+.yes{background:#eef6ea}.no{background:#fbeee8}
+.promise ul{padding-right:20px;margin:0}
+/* order */
+.order{background:var(--lav);color:#fff}
+.order .muted{color:#d9d2ee}
+.plans{display:grid;gap:18px;margin:26px 0}
+.plan{background:#fff;color:var(--ink);border-radius:30px;padding:26px;position:relative}
+.plan.rec{background:var(--cream);outline:3px solid var(--amber)}
+.plan .muted{color:var(--muted)}
+.badge{position:absolute;top:-14px;right:24px;background:var(--amber);color:#3b2207;border-radius:999px;padding:4px 14px;font-size:.9rem}
+.price{font-family:"Varela Round",sans-serif;font-size:2.2rem;margin:.2em 0}.price s{font-size:1.1rem;color:#a99}
+.bit{background:rgba(255,255,255,.08);border-radius:30px;padding:24px}
+.bitbtn{display:inline-flex;align-items:center;gap:10px;background:#fff;color:#1a1a1a;text-decoration:none;border-radius:999px;padding:10px 22px;font-weight:700}
+.bitlogo{background:#00a69c;color:#fff;border-radius:10px;padding:2px 8px}
+#bitform label{display:block;margin:10px 0}
+#bitform input,#bitform select{display:block;width:100%;margin-top:4px;padding:12px;border-radius:14px;border:0;font:inherit}
+.disc{font-size:.85rem;opacity:.8;margin-top:24px}
+/* faq */
+details{background:#fff;border-radius:20px;padding:14px 20px;margin:10px 0}
+summary{cursor:pointer;font-weight:700}
+footer{text-align:center;padding:40px 20px 80px;background:var(--peach);color:var(--ink)}footer a{color:inherit}
+@media(min-width:760px){
+.two{grid-template-columns:1fr 1.4fr}.two.cols{grid-template-columns:1fr 1fr}
+.plans{grid-template-columns:1fr 1fr}
+.kitgrid{grid-template-columns:repeat(6,1fr)}.k1{grid-column:span 4;grid-row:span 2}.k2,.k3{grid-column:span 2}.k4{grid-column:span 3}.k5{grid-column:span 3}
+.moon.big{left:12%}}
+@media(prefers-reduced-motion:reduce){.st{animation:none}#loader{transition:none}}
+.launch{max-width:520px;margin:18px auto 26px;text-align:center;background:var(--cream);color:var(--ink);border-radius:26px;padding:16px 18px;border:2px dashed var(--amber)}
+.launch .ltitle{margin:0 0 10px;font-family:"Varela Round",sans-serif;font-size:1.05rem}
+.cd{display:flex;justify-content:center;gap:10px}
+.cd span{background:var(--peach);border-radius:16px;min-width:62px;padding:6px 4px;font-size:.85rem;color:var(--muted)}
+.cd b{display:block;font-size:1.6rem;line-height:1.2;color:var(--amberd)}
