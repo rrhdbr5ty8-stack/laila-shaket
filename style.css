@@ -113,3 +113,18 @@ footer{text-align:center;padding:40px 20px 80px;background:var(--peach);color:va
  .stickybar.off{transform:translateY(110%)}
  .floatsound{bottom:calc(86px + env(safe-area-inset-bottom))!important}
 }
+/* journey video + why now + badges */
+.journey{padding:40px 16px;text-align:center}
+.vidwrap{max-width:380px;margin:18px auto;border-radius:22px;overflow:hidden;box-shadow:0 14px 40px rgba(40,30,70,.25)}
+.vidwrap video{display:block;width:100%;height:auto;aspect-ratio:9/16;background:#2b2548}
+.vidnote{font-size:.8rem;opacity:.7;margin:6px 0 14px}
+.now{background:#3d3657;color:#fff;padding:44px 0}
+.now h2{text-align:center}
+.whynow{list-style:none;padding:0;max-width:640px;margin:18px auto;display:grid;gap:12px}
+.whynow li{background:rgba(255,255,255,.08);border-radius:16px;padding:14px 16px;line-height:1.6}
+.now .big{font-size:1.15rem;font-weight:700;color:#ffe2a0}
+.ctas.center{justify-content:center;display:flex}
+.paybadges{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin:8px 0;font-size:.85rem}
+.paybadges img{background:#fff;border-radius:8px;padding:4px 8px;height:30px;width:auto}
+.paybadges.top{margin:10px auto 18px}
+.bitbadge{height:34px;width:34px;vertical-align:middle;border-radius:8px}
