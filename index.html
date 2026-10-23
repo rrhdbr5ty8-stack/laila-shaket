@@ -32,6 +32,7 @@
     <p class="lead">אנחנו מכירים את הרגע הזה. את הכוס מים שהוא "חייב". את החיבוק שהוא "רק עוד אחד". את התחושה שגם הערב, כשהבית סוף סוף ישקוט, לא תישאר לכם דקה לעצמכם.</p>
     <p class="lead">ערכת "לילה שקט" נולדה בשביל ההורים האלה. 14 ערבים, צעד קטן בכל ערב, עד שההשכבה הופכת מרגע של מאבק לרגע של קרבה.</p>
     <div class="ctas"><a class="btn" href="#order">אני רוצה ערבים שקטים יותר · ₪89</a><a class="btn soft" href="#quiz">בדיקה קצרה של 30 שניות</a></div>
+    <p class="trust">🔒 תשלום מאובטח · 📩 הערכה נשלחת למייל לאחר אישור התשלום</p>
   </div>
   <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,64 C240,120 480,0 720,48 C960,96 1200,24 1440,72 L1440,120 L0,120Z" fill="#fff8ef"/></svg>
 </header>
@@ -88,6 +89,14 @@
   </div>
 </section>
 
+<section class="wrap tipbox" aria-labelledby="tiph">
+  <div class="tip"><span class="ico">🎁</span>
+    <h2 id="tiph">טיפ במתנה, כבר להערב</h2>
+    <p><b>מורידים את האור שעה לפני השינה.</b> אחרי ארוחת הערב מעמעמים אורות בבית, מכבים מסכים ועוברים לפעילות שקטה כמו ציור, פאזל או סיפור. אור חזק ומסכים מאותתים לגוף שעדיין יום, ואור רך עוזר לו להבין שמתקרב זמן לנוח.</p>
+    <p class="muted">עוד פרט קטן שעוזר: לשמור על אותה שעת השכבה גם בסופי שבוע, פחות או יותר.</p>
+  </div>
+</section>
+
 <section class="kit">
   <div class="wrap">
     <h2>מה מחכה לכם במייל</h2>
@@ -103,6 +112,12 @@
   </div>
 </section>
 
+<!-- TODO (אריאל): כאן אפשר להוסיף המלצות אמיתיות מהורים (עם אישורם). לא להמציא.
+<section class="wrap testimonials"><h2>מה הורים כותבים</h2> ... </section>
+-->
+<!-- TODO (אריאל): כאן אפשר להוסיף "קצת עליי" – טקסט אמיתי בלבד.
+<section class="wrap about"><h2>מי אני</h2> ... </section>
+-->
 <section class="promise">
   <div class="wrap">
     <h2>מה אנחנו מבטיחים, ומה לא</h2>
@@ -129,14 +144,25 @@
         <p class="price"><s>₪189</s> ₪89</p>
         <p class="muted">תשלום חד-פעמי</p>
         <a class="btn pp" href="https://payhip.com/b/YAlgr" data-todo="replace with Payhip product link" target="_blank" rel="noopener">תשלום ב-PayPal · ₪89</a>
+        <p class="trust">🔒 תשלום מאובטח · 📩 הערכה נשלחת למייל לאחר אישור התשלום</p>
       </div>
       <div class="plan rec">
         <span class="badge">הכי משתלם</span>
         <h3>הערכה המלאה</h3>
-        <p>כל מה שבערכה, ועוד <b>מדריך הגמילה ממסכים לפני השינה</b> עם 25 משחקי ערב שקטים</p>
+        <p>כל מה שבערכה, ועוד מדריך הגמילה ממסכים:</p>
+        <ul class="incl" aria-label="מה כלול בהערכה המלאה">
+          <li>✓ תוכנית 14 ערבים בשיטת "הדרגת הנוכחות" (PDF)</li>
+          <li>✓ טבלת כוכבים וכרטיסי לילה להדפסה</li>
+          <li>✓ 3 סיפורי הרגעה</li>
+          <li>✓ תעודת "אלוף/ת השינה"</li>
+          <li>✓ 2 קובצי אודיו: רעש לבן וגשם (MP3)</li>
+          <li>✓ <b>מדריך הגמילה ממסכים לפני השינה</b> + 25 משחקי ערב שקטים (PDF)</li>
+        </ul>
+
         <p class="price">₪129</p>
         <p class="muted">תשלום חד-פעמי</p>
         <a class="btn pp" href="https://payhip.com/b/yK2Ni" data-todo="replace with Payhip product link" target="_blank" rel="noopener">תשלום ב-PayPal · ₪129</a>
+        <p class="trust">🔒 תשלום מאובטח · 📩 הערכה נשלחת למייל לאחר אישור התשלום</p>
       </div>
     </div>
     <div class="bit" id="bit">
@@ -150,6 +176,7 @@
         <label>החבילה ששילמתי עליה <select name="package" required><option value="basic">ערכת לילה שקט – ₪89</option><option value="full" selected>הערכה המלאה – ₪129</option></select></label>
         <input name="website" style="display:none" tabindex="-1" autocomplete="off">
         <button class="btn" type="submit">שילמתי בביט, שלחו לי את הערכה</button>
+        <p class="trust">🔒 תשלום מאובטח בביט · 📩 הערכה נשלחת למייל לאחר אישור התשלום</p>
         <p id="bitmsg" role="status"></p>
       </form>
     </div>
@@ -169,5 +196,7 @@
   <p>לילה טוב, ושיהיו לכם עוד הרבה ערבים שקטים 🌙</p>
   <p>© ערכת לילה שקט™ · ליצירת קשר: <a href="mailto:Mushana2002@gmail.com" dir="ltr">Mushana2002@gmail.com</a></p>
 </footer>
+<div class="stickybar" id="stickybar" aria-hidden="true"><span>החל מ-<b>₪89</b> · תשלום חד-פעמי</span><a class="btn" href="#order" tabindex="-1">לבחירת ערכה</a></div>
 <script src="app.js"></script>
+<script>(function(){var b=document.getElementById('stickybar'),o=document.getElementById('order');if(!b||!o||!('IntersectionObserver' in window))return;new IntersectionObserver(function(e){b.classList.toggle('off',e[0].isIntersecting)},{threshold:0.05}).observe(o);})();</script>
 </body></html>
